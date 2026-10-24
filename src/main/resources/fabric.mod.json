@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"name": "${mod_name}",
+	"version": "${mod_version}",
+	"license": "GPL-3.0-or-later",
+	"environment": "client",
+	"icon": "icon.png",
+
+	"description": "${mod_description_esc}",
+
+	"authors": [ ${mod_authors_jarray} ],
+	"contributors": [ ${mod_contributors_jarray} ],
+
+	"contact": {
+		"homepage": "${contact_homepage}",
+		"sources": "${contact_sources}",
+		"issues": "${contact_issues}"
+	},
+
+	"entrypoints": {
+		"client": [ "mirsario.cameraoverhaul.entrypoints.FabricClientModInitializer" ],
+		"modmenu": [ "mirsario.cameraoverhaul.configuration.ModMenuConfigIntegration" ]
+	},
+	
+	"mixins": [
+		"${mod_id}.mixins.json"
+	],
+
+	"depends": {
+		"minecraft": "${mc_version_range}",
+		"cloth-config2": "${mods_clothconfig_range}"
+	},
+	"recommends": {
+		"fabricloader": ">=0.4.0"
+	},
+	"suggests": {
+		"modmenu": "${mods_modmenu_range}"
+	},
+
+	"custom": {
+		"modmenu": {
+			"update_checker": false
+		}
+	}
+}
