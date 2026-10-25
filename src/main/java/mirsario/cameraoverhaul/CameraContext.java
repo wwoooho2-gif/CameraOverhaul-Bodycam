@@ -1,4 +1,8 @@
 // Copyright 2020-2026 Mirsario & Contributors.
+<<<<<<< HEAD
+=======
+// Modifications Copyright 2026 T2ws.
+>>>>>>> 8f86573 (woah)
 // Released under the GNU General Public License 3.0.
 // See LICENSE.md for details.
 
@@ -20,6 +24,16 @@ public class CameraContext {
 	public boolean isRiding;
 	public boolean isRidingMount;
 	public boolean isRidingVehicle;
+<<<<<<< HEAD
+=======
+	public boolean isCrouching;
+	/// True when the values below come from the player model's own walk animation.
+	public boolean hasWalkAnimation;
+	/// The model's walk animation position. Its legs swing by cos(position * 0.6662).
+	public float walkAnimationPos;
+	/// The model's walk animation speed, 0 when standing still and about 1 when running.
+	public float walkAnimationSpeed;
+>>>>>>> 8f86573 (woah)
 	public Vector3d velocity;
 	public Perspective perspective;
 	public Transform transform = new Transform();

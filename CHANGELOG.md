@@ -26,6 +26,17 @@
 | [1.0.0](#100)                         | `2020-11-30` |
 
 # Work In Progress
+<<<<<<< HEAD
+=======
+- Added an optional shader pack, Bodycam VHS, for an analog horror camcorder look. It lives in `shaderpack/BodycamVHS/` and is distributed separately.
+- Defaults tuned towards the chest-mounted camera feel of the game Bodycam: stronger torso lag, more strafe roll, more forward lean when sprinting, and more idle drift. The configuration resets once to apply the new defaults.
+- Calmer by default: footsteps shake the camera much less when walking and only a little when sprinting. New settings `walkShakeIntensity` and `sprintShakeIntensity`.
+- Camera motion now follows the player model: gait timing and size come from the model's own walk animation, and sneaking leans the camera forward. New setting `gaitFollowsModel`.
+- Added foot-based leaning: tilt towards the planted foot on each step, leaning into turns while running, and forward/back pitch on stairs. New settings `footLeanIntensity` and `terrainLeanIntensity`.
+- More realistic gait: stride length now grows with speed, strafing and backwards walking move differently, and a heartbeat that quickens as you tire. New setting `heartbeatIntensity`.
+- Added falling shake: wind buffeting and flailing while falling, scaling with fall speed, and harder landings after long falls. New setting `fallShakeIntensity`.
+- Added mount riding shake: hoofbeat bounce, side rock and gallop rumble while riding a horse or other mount. New setting `mountShakeIntensity`.
+>>>>>>> 8f86573 (woah)
 - Fork renamed to "CameraOverhaul: Bodycam Edition", maintained by T2ws. Original mod by Mirsario.
 - Added realism suite: footstep-timed gait, landing & jump impacts, neck inertia springs, breathing, fatigue, and muscle tremor. All configurable.
 - Added bodycam mode: chest-mounted feel with footstep jolts, torso lag behind mouse movement, heavier breathing, and no tremor.

@@ -1,4 +1,8 @@
 // Copyright 2020-2026 Mirsario & Contributors.
+<<<<<<< HEAD
+=======
+// Modifications Copyright 2026 T2ws.
+>>>>>>> 8f86573 (woah)
 // Released under the GNU General Public License 3.0.
 // See LICENSE.md for details.
 
@@ -161,7 +165,21 @@ public abstract class CameraMixin {
 			context.isFlying = ((LivingEntity)entity).isFallFlying();
 			context.isSwimming = entity.isSwimming();
 			context.isSprinting = entity.isSprinting();
+<<<<<<< HEAD
 		}
+=======
+
+			// Read the player model's own walk animation, so that the camera follows the legs that are drawn.
+			//? if >=1.21 {
+			var living = (LivingEntity)entity;
+			float modelPartialTick = Minecraft.getInstance().getDeltaTracker().getGameTimeDeltaPartialTick(false);
+			context.hasWalkAnimation = true;
+			context.walkAnimationPos = living.walkAnimation.position(modelPartialTick);
+			context.walkAnimationSpeed = living.walkAnimation.speed(modelPartialTick);
+			//?}
+		}
+		context.isCrouching = entity.isCrouching();
+>>>>>>> 8f86573 (woah)
 
 		if (!Minecraft.getInstance().isPaused()) {
 			TimeSystem.update();

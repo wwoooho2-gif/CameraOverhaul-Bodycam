@@ -37,10 +37,16 @@ Xinyang-Gao
 """
 
 # Contact (Mod)
+<<<<<<< HEAD
 # TODO: replace these with the URLs of your own project once it is published.
 contact.homepage = "https://github.com/Mirsario/Minecraft-CameraOverhaul"
 contact.sources = "https://github.com/Mirsario/Minecraft-CameraOverhaul"
 contact.issues = "https://github.com/Mirsario/Minecraft-CameraOverhaul/issues"
+=======
+contact.homepage = "https://github.com/wwoooho2-gif/CameraOverhaul-Bodycam"
+contact.sources = "https://github.com/wwoooho2-gif/CameraOverhaul-Bodycam"
+contact.issues = "https://github.com/wwoooho2-gif/CameraOverhaul-Bodycam/issues"
+>>>>>>> 8f86573 (woah)
 # Contact (Author)
 contact.email = ""
 
@@ -66,7 +72,11 @@ deps.mixin_extras = "0.5.0-beta.5"
 publish.enabled = false
 publish.modrinth.id = "TODO"
 publish.curseforge.id = "TODO"
+<<<<<<< HEAD
 publish.github.repository = "T2ws/TODO"
+=======
+publish.github.repository = "wwoooho2-gif/CameraOverhaul-Bodycam"
+>>>>>>> 8f86573 (woah)
 publish.github.branch = "main"
 publish.github.format = """
 {{changelog}}

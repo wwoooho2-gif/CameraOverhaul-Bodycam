@@ -17,7 +17,11 @@ public final class ConfigData {
 		public double turningRollIntensity = 1.25;
 		public double turningRollSmoothing = 1.0;
 		// Sway
+<<<<<<< HEAD
 		public double cameraSwayIntensity = 0.60;
+=======
+		public double cameraSwayIntensity = 0.90;
+>>>>>>> 8f86573 (woah)
 		public double cameraSwayFrequency = 0.16;
 		public double cameraSwayFadeInDelay = 0.15;
 		public double cameraSwayFadeInLength = 5.0;
@@ -29,14 +33,23 @@ public final class ConfigData {
 		public double thunderTrauma = 0.05;
 		public double handSwingTrauma = 0.03;
 		// Realism
+<<<<<<< HEAD
 		public double gaitIntensity = 1.0;
 		public double gaitCycleLength = 3.6;
+=======
+		public double walkShakeIntensity = 0.30;
+		public double sprintShakeIntensity = 0.38;
+		public double gaitIntensity = 1.0;
+		public double gaitCycleLength = 3.6;
+		public boolean gaitFollowsModel = true;
+>>>>>>> 8f86573 (woah)
 		public double landingImpactIntensity = 1.0;
 		public double jumpKickIntensity = 1.0;
 		public double accelerationLeanIntensity = 1.0;
 		public double breathingIntensity = 1.0;
 		public double fatigueIntensity = 1.0;
 		public double handheldTremorIntensity = 1.0;
+<<<<<<< HEAD
 		// Bodycam
 		public boolean bodycamEnabled = true;
 		public double bodycamIntensity = 1.0;
@@ -45,6 +58,21 @@ public final class ConfigData {
 	}
 	public static final class Contextual implements Cloneable {
 		public double strafingRollFactor = 10.0;
+=======
+		public double mountShakeIntensity = 1.0;
+		public double fallShakeIntensity = 1.0;
+		public double heartbeatIntensity = 1.0;
+		public double footLeanIntensity = 1.0;
+		public double terrainLeanIntensity = 1.0;
+		// Bodycam
+		public boolean bodycamEnabled = true;
+		public double bodycamIntensity = 1.0;
+		public double bodycamTorsoLag = 1.3;
+		public double bodycamStepJolt = 1.0;
+	}
+	public static final class Contextual implements Cloneable {
+		public double strafingRollFactor = 13.0;
+>>>>>>> 8f86573 (woah)
 		public double forwardVelocityPitchFactor = 7.0;
 		public double verticalVelocityPitchFactor = 2.5;
 		public double horizontalVelocitySmoothingFactor = 1.0;
@@ -67,7 +95,11 @@ public final class ConfigData {
 		}
 	}
 
+<<<<<<< HEAD
 	public static final int CONFIG_VERSION = 3;
+=======
+	public static final int CONFIG_VERSION = 4;
+>>>>>>> 8f86573 (woah)
 
 	public int configVersion;
 	public General general = new General();
@@ -80,8 +112,13 @@ public final class ConfigData {
 
 	public ConfigData() {
 		// Sprinting
+<<<<<<< HEAD
 		sprinting.strafingRollFactor = 12.5;
 		sprinting.forwardVelocityPitchFactor = 9.5;
+=======
+		sprinting.strafingRollFactor = 16.0;
+		sprinting.forwardVelocityPitchFactor = 12.0;
+>>>>>>> 8f86573 (woah)
 		// Flying
 		flying.strafingRollFactor *= -1.0;
 		// Swimming

@@ -83,6 +83,11 @@ tasks.withType<JavaCompile> {
 java {
 	sourceCompatibility = javaSrcVersion
 	targetCompatibility = javaSrcVersion
+<<<<<<< HEAD
+=======
+	// Also produce a "-sources.jar" with the mod's source code.
+	withSourcesJar()
+>>>>>>> 8f86573 (woah)
 }
 jvmdg {
 	downgradeTo = javaDstVersion
@@ -226,11 +231,22 @@ tasks.processResources {
 	inputs.properties(properties)
 }
 
+<<<<<<< HEAD
 // Copy the finished jar into <project root>/libs/ after every build.
+=======
+// Source jar: remapped on obfuscated Minecraft versions, plain otherwise.
+val lastSourcesTask: Task = (if (isRemapped) tasks.named<Task>("remapSourcesJar") else tasks.named<Task>("sourcesJar")).get()
+
+// Copy the finished jar and the sources jar into <project root>/libs/ after every build.
+>>>>>>> 8f86573 (woah)
 val copyToLibs = tasks.register<Copy>("copyToLibs") {
 	val dir = rootProject.file("libs")
 	project.delete(fileTree(mapOf("dir" to dir, "include" to listOf("${required("archives_base_name")}-*-${loader}+*.jar"))))
 	from(lastTask)
+<<<<<<< HEAD
+=======
+	from(lastSourcesTask)
+>>>>>>> 8f86573 (woah)
 	into(dir)
 }
 tasks.getByName("build").finalizedBy(copyToLibs)

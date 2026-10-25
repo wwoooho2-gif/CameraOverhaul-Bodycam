@@ -61,7 +61,11 @@
 	"cameraoverhaul.config.gaitIntensity.name": "Walking Gait Intensity",
 	"cameraoverhaul.config.gaitIntensity.desc": "Strength of the head sway tied to footsteps. Steps are timed to the distance you travel. Consider turning off vanilla View Bobbing to avoid doubling up.",
 	"cameraoverhaul.config.gaitCycleLength.name": "Gait Cycle Length",
+<<<<<<< HEAD
 	"cameraoverhaul.config.gaitCycleLength.desc": "Blocks travelled per full stride (left + right step). Larger values mean slower, longer steps.",
+=======
+	"cameraoverhaul.config.gaitCycleLength.desc": "Blocks travelled per full stride (left + right step). Larger values mean slower, longer steps. Only used when Follow Player Model is off.",
+>>>>>>> 8f86573 (woah)
 	"cameraoverhaul.config.landingImpactIntensity.name": "Landing Impact Intensity",
 	"cameraoverhaul.config.landingImpactIntensity.desc": "Strength of the head dip and wobble when landing after a jump or fall. Scales with fall speed.",
 	"cameraoverhaul.config.jumpKickIntensity.name": "Jump Kick Intensity",
@@ -74,6 +78,25 @@
 	"cameraoverhaul.config.fatigueIntensity.desc": "How much sprinting for a while leaves you winded, with heavier breathing and a larger gait.",
 	"cameraoverhaul.config.handheldTremorIntensity.name": "Muscle Tremor Intensity",
 	"cameraoverhaul.config.handheldTremorIntensity.desc": "Strength of the tiny constant shake of a living head that is never perfectly still.",
+<<<<<<< HEAD
+=======
+	"cameraoverhaul.config.mountShakeIntensity.name": "Mount Riding Shake",
+	"cameraoverhaul.config.mountShakeIntensity.desc": "Strength of the hoofbeat bounce and rumble while riding a horse or other mount. It grows with speed, so a gallop shakes the most. 0 turns it off.",
+	"cameraoverhaul.config.fallShakeIntensity.name": "Falling Shake",
+	"cameraoverhaul.config.fallShakeIntensity.desc": "Strength of the flailing and wind buffeting while falling. It grows with fall speed, so long drops shake the most. 0 turns it off.",
+	"cameraoverhaul.config.heartbeatIntensity.name": "Heartbeat Intensity",
+	"cameraoverhaul.config.heartbeatIntensity.desc": "Strength of the faint heartbeat thump in the camera. It quickens and gets stronger as sprinting leaves you winded. 0 turns it off.",
+	"cameraoverhaul.config.footLeanIntensity.name": "Foot Lean Intensity",
+	"cameraoverhaul.config.footLeanIntensity.desc": "Strength of the tilt towards the planted foot on every step, and of leaning into turns while running. 0 turns it off.",
+	"cameraoverhaul.config.terrainLeanIntensity.name": "Terrain Lean Intensity",
+	"cameraoverhaul.config.terrainLeanIntensity.desc": "Strength of the lean when your feet go up or down, such as climbing stairs (forward) or descending them (back). 0 turns it off.",
+	"cameraoverhaul.config.gaitFollowsModel.name": "Follow Player Model",
+	"cameraoverhaul.config.gaitFollowsModel.desc": "Times the footsteps and sets their size from the player model's own leg animation, so camera steps match the legs you see. Turn off to time steps by distance travelled instead.",
+	"cameraoverhaul.config.walkShakeIntensity.name": "Walking Shake",
+	"cameraoverhaul.config.walkShakeIntensity.desc": "How much footsteps shake the camera while walking. 1 is the full original strength, lower is calmer, 0 turns it off.",
+	"cameraoverhaul.config.sprintShakeIntensity.name": "Sprinting Shake",
+	"cameraoverhaul.config.sprintShakeIntensity.desc": "How much footsteps shake the camera while sprinting. 1 is the full original strength, lower is calmer, 0 turns it off.",
+>>>>>>> 8f86573 (woah)
 	"cameraoverhaul.config.bodycamEnabled.name": "Bodycam Mode",
 	"cameraoverhaul.config.bodycamEnabled.desc": "Makes the camera behave as if strapped to your chest: harsher footstep jolts, a camera that trails behind where you look, stronger breathing, and no tremor.",
 	"cameraoverhaul.config.bodycamIntensity.name": "Bodycam Intensity",
